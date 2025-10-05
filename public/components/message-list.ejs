@@ -1,1 +1,14 @@
-<div>message list</div>
+<link rel="stylesheet" href="../static/message-list.css">
+<div class="message-list">
+  <% if (messages.length === 0) { %>
+    <p>No messages yet. Be the first to post!</p>
+  <% } else { %>
+    <% messages.forEach(msg => { %>
+      <div class="message">
+        <strong><%= msg.name || 'Anonymous' %>:</strong>
+        <p><%= msg.content %></p>
+        <span class="timestamp"><%= new Date(msg.created_at).toLocaleString() %></span>
+      </div>
+    <% }) %>
+  <% } %>
+</div>

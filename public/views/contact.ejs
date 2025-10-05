@@ -1,1 +1,32 @@
-<div>contact</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/contact.css">
+  <title>Contact Me - casuallydreamin</title>
+</head>
+<body>
+  <%- include('../components/navbar') %>
+
+  <main class="contact-page">
+    <h1>Contact Me</h1>
+    <p>Want to say hi, collaborate on a project, or just talk about web development, games, or rock music? Feel free to reach out!</p>
+    
+    <ul>
+      <li><strong>GitHub:</strong> <a href="https://github.com/casuallydreamin" target="_blank">github.com/casuallydreamin</a></li>
+      <li><strong>Email:</strong> <a href="mailto:ysn.arambash@gmail.com">ysn.arambash@example.com</a></li>
+    </ul>
+
+    <p>If you want, you can also send a quick message directly here:</p>
+    
+    <form action="/" method="POST" class="input-form">
+      <input name="name" type="text" placeholder="Your Name" required>
+      <textarea name="content" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <p>All messages go to my message board, so feel free to drop a hello!</p>
+  </main>
+</body>
+</html>

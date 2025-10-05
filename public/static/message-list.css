@@ -1,0 +1,14 @@
+.message-list {
+    width: 80vw;
+    display: flex;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    gap: 10px;  
+    justify-content: flex-start;
+}
+
+.message {
+    background-color: var(--extra-color);
+    flex: 1 1 200px;
+    min-width: max-content;
+}   

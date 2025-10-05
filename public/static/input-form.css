@@ -1,0 +1,28 @@
+.input-form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.input-form * {
+    background-color: var(--primary-text-color);
+    color: var(--dark-text-color);
+}
+
+textarea {
+    resize: none
+}
+
+.input-form button {
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+}
+
+.input-form button:hover {
+    background-color: var(--extra-color);
+    color: var(--primary-text-color);
+}
+
+#message {
+    min-height: 3rem;
+}

@@ -1,0 +1,15 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
